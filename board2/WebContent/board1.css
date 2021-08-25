@@ -1,0 +1,37 @@
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:orange;
+}
+input[type=password] {
+	border:1px solid orange;
+	height:30px;
+}
+textarea {
+	border:1px solid orange;
+}
+input[type=text]{
+	margin:auto;
+	width:350px;
+	height:30px;
+	border:1px solid orange;
+}
+table{border-collapse: collapse}
+tr{height:60px;}
+td{
+	padding:10px;
+	border-top:1px solid orange;
+	border-right:1px solid orange;
+}
+td:last-child {border-right:none;}
+tr:first-child td{border-top:none;}
+tr:last-child td{border-top:none;}
+td:first-child{text-align:center;}
+#right{text-align:right;}
+#btn{
+	width:200px;
+	height:40px;
+	background:orange;
+}

@@ -1,0 +1,47 @@
+*{
+text-align:center;
+margin:0;
+padding:0;
+list-style-type:none;
+}
+li{
+padding:10px 20px;
+width:150px;
+background:#fecfc0;
+}
+#menu{margin:0 auto;}
+#menu > .main{
+padding:15px 20px;
+display:inline-block;
+position:relative;
+}
+li:hover{
+background:white;
+}
+.main:hover ul.sub{
+display:block;
+}
+.sub > li:hover ul.inner{
+display:block;
+}
+.inner > li:hover ul.one{
+display:block;
+}
+/* inline은 block형이 가지고 있는 가로세로가 안만들어짐 
+inline-block은 가로세로 값을 줄 수 있음*/
+.sub{
+position:absolute;
+top:50px;
+left:0;
+display:none;
+}
+.sub > li, .inner >li{
+display:relative;
+}
+.inner, .one{
+position:absolute;
+margin-left:151px;
+top:-1px;
+left:40px;
+display:none;
+}

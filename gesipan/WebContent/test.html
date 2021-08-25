@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function test(){
+	
+	alert("gg");
+}
+function popup(){
+	
+	window.open('pop.html','toolbar=no,location=no,statusbar=no,menubar=no,resizable=no,scrollbars=yes,width=450,height=250')
+}
+</script>
+</head>
+<body>
+<form name="frm" method="post">
+	<input type="text" name="name" onfocus="test()" readonly>
+	<input type="button" name="name2" onclick="popup()" value="팝업">
+</form>
+</body>
+</html>

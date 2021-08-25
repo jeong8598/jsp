@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+  function temp(){
+    opener.document.frm.name.value=document.frm2.pop.value;
+    opener.document.frm.name.focus();
+    window.close();
+</script>
+</head>
+<body>
+<form name="frm2" method="post">
+  <input type="text" name="pop">
+  <input type="button" name="name2" onclick="temp()"value="넣기">
+</form>
+</body>
+</html>
